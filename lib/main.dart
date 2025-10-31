@@ -29,8 +29,8 @@ class MyHome extends StatelessWidget {
           children: [
             SizedBox(height: 50),
             Container(
-              width: 250,
-              height: 250,
+              width: 175,
+              height: 175,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.pink,
@@ -40,6 +40,11 @@ class MyHome extends StatelessWidget {
                 ),
               ),
             ),
+            Text(
+              "welcome",
+              style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold),
+            ),
+            Container(),
           ],
         ),
       ),

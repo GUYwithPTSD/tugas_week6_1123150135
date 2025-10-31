@@ -29,8 +29,8 @@ class MyHome extends StatelessWidget {
           children: [
             SizedBox(height: 50),
             Container(
-              width: 175,
-              height: 175,
+              width: 150,
+              height: 150,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.deepOrange,
@@ -51,6 +51,38 @@ class MyHome extends StatelessWidget {
                 color: Colors.blueAccent,
                 fontWeight: FontWeight.normal,
               ),
+            ),
+            const SizedBox(height: 30.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 5,
+                  height: 5,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.indigo,
+                  ),
+                ),
+                SizedBox(width: 5),
+                Container(
+                  width: 5,
+                  height: 5,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.indigo,
+                  ),
+                ),
+                SizedBox(width: 5),
+                Container(
+                  width: 5,
+                  height: 5,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.indigo,
+                  ),
+                ),
+              ],
             ),
             Container(),
           ],

@@ -87,14 +87,19 @@ class MyHome extends StatelessWidget {
             ),
             SizedBox(height: 5.0),
             Container(
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepOrange,
-                ),
-                child: Text(
-                  "Continue",
-                  style: TextStyle(fontSize: 14.0, color: Colors.white),
+              margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepOrange,
+                  ),
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 14.0, color: Colors.white),
+                  ),
                 ),
               ),
             ),

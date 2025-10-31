@@ -33,7 +33,7 @@ class MyHome extends StatelessWidget {
               height: 175,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.pink,
+                color: Colors.deepOrange,
                 image: DecorationImage(
                   image: AssetImage("../assets/images/profile.png"),
                   fit: BoxFit.cover,
@@ -42,7 +42,15 @@ class MyHome extends StatelessWidget {
             ),
             Text(
               "welcome",
-              style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "forgot to bring your wallet \n when you're shoping ?",
+              style: TextStyle(
+                fontSize: 10.0,
+                color: Colors.blueAccent,
+                fontWeight: FontWeight.normal,
+              ),
             ),
             Container(),
           ],

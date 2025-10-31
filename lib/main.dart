@@ -34,6 +34,10 @@ class MyHome extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.pink,
+                image: DecorationImage(
+                  image: AssetImage("../assets/images/profile.png"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ],

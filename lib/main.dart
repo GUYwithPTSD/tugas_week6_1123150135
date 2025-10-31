@@ -45,6 +45,7 @@ class MyHome extends StatelessWidget {
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             Text(
+              textAlign: TextAlign.center,
               "forgot to bring your wallet \n when you're shoping ?",
               style: TextStyle(
                 fontSize: 10.0,
@@ -84,7 +85,19 @@ class MyHome extends StatelessWidget {
                 ),
               ],
             ),
-            Container(),
+            SizedBox(height: 5.0),
+            Container(
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepOrange,
+                ),
+                child: Text(
+                  "Continue",
+                  style: TextStyle(fontSize: 14.0, color: Colors.white),
+                ),
+              ),
+            ),
           ],
         ),
       ),

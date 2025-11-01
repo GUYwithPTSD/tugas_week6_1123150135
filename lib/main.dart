@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_week6_1123150135/screen/splash_screen1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,102 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Contoh AppBar',
-      debugShowCheckedModeBanner: false,
-      home: const MyHome(),
-    );
-  }
-}
-
-class MyHome extends StatelessWidget {
-  const MyHome({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(height: 50),
-            Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.deepOrange,
-                image: DecorationImage(
-                  image: AssetImage("../assets/images/profile.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Text(
-              "welcome",
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
-            ),
-            Text(
-              textAlign: TextAlign.center,
-              "forgot to bring your wallet \n when you're shoping ?",
-              style: TextStyle(
-                fontSize: 10.0,
-                color: Colors.blueAccent,
-                fontWeight: FontWeight.normal,
-              ),
-            ),
-            const SizedBox(height: 30.0),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 5,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.indigo,
-                  ),
-                ),
-                SizedBox(width: 5),
-                Container(
-                  width: 5,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.indigo,
-                  ),
-                ),
-                SizedBox(width: 5),
-                Container(
-                  width: 5,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.indigo,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 5.0),
-            Container(
-              margin: EdgeInsets.only(left: 40, right: 40),
-              child: SizedBox(
-                height: 40,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepOrange,
-                  ),
-                  child: Text(
-                    "Continue",
-                    style: TextStyle(fontSize: 14.0, color: Colors.white),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+      title: 'NIM : 1123150135, IVAN DARMA SAPUTRA',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink),
       ),
+      debugShowCheckedModeBanner: false,
+      home: const SplashScreen1(),
     );
   }
 }

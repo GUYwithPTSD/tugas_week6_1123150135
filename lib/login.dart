@@ -6,15 +6,49 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(20.0),
-          child: const Column(
-            children: [
-              SizedBox(height: 10),
-              Icon(Icons.lock_outline, size: 80, color: Colors.indigo),
-              SizedBox(height: 10.0),
-            ],
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
+            margin: EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.all(20.0),
+            child: const Column(
+              children: [
+                SizedBox(height: 10),
+                Icon(Icons.lock_outline, size: 50, color: Colors.indigo),
+                SizedBox(height: 10.0),
+                Text(
+                  "Selamat Datang",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "Silahkan login untuk melanjutkan",
+                  style: TextStyle(
+                    fontSize: 10.0,
+                    color: Colors.indigo,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: 'email',
+                    hintText: 'masukkan email anda',
+                    prefixIcon: Icon(Icons.email_outlined),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

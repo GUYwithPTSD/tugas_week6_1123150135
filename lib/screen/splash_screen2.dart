@@ -19,7 +19,7 @@ class SplashScreen2 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.deepOrange,
                 image: DecorationImage(
-                  image: AssetImage("../assets/images/profile.png"),
+                  image: AssetImage("../assets/images/profile2.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -55,7 +55,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 5,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.indigo,
+                    color: Colors.lightBlue,
                   ),
                 ),
                 SizedBox(width: 5),

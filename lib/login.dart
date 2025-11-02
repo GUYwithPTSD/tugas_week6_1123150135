@@ -11,7 +11,7 @@ class Login extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.only(left: 20, right: 20),
             padding: const EdgeInsets.all(20.0),
-            child: const Column(
+            child: Column(
               children: [
                 SizedBox(height: 10),
                 Icon(Icons.lock_outline, size: 50, color: Colors.indigo),
@@ -68,6 +68,19 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 10.0),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Lupa Password?',
+                      style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 30),
+                ElevatedButton(onPressed: () {}, child: Text('Login')),
               ],
             ),
           ),

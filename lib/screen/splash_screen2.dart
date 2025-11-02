@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_week6_1123150135/screen/splash_screen3.dart';
 
 class SplashScreen2 extends StatelessWidget {
   const SplashScreen2({super.key});
@@ -25,7 +26,7 @@ class SplashScreen2 extends StatelessWidget {
               ),
             ),
             Text(
-              "welcome2",
+              "welcome",
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             Text(
@@ -76,7 +77,12 @@ class SplashScreen2 extends StatelessWidget {
                 height: 40,
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.deepOrange,
                   ),

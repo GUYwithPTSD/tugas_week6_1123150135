@@ -28,6 +28,7 @@ class Login extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
+                SizedBox(height: 40.0),
                 TextField(
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(

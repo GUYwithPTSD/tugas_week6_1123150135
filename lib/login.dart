@@ -80,6 +80,7 @@ class Login extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30),
+
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
@@ -95,6 +96,37 @@ class Login extends StatelessWidget {
                   child: Text(
                     'Login',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                Row(
+                  children: [
+                    Expanded(child: Divider(color: Colors.grey[300])),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Text(
+                        "atau",
+                        style: TextStyle(color: Colors.grey[600]),
+                      ),
+                    ),
+                    Expanded(child: Divider(color: Colors.grey[300])),
+                  ],
+                ),
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.g_mobiledata, color: Colors.grey, size: 30),
+                  label: Text(
+                    "login with Google",
+                    style: TextStyle(color: Colors.grey[600], fontSize: 16),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.grey[300],
+                    side: BorderSide(color: Colors.grey[500]!),
+                    padding: EdgeInsets.symmetric(vertical: 15.0),
+                    minimumSize: Size(double.infinity, 50),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                    ),
                   ),
                 ),
               ],

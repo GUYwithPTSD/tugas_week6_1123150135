@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:tugas_week6_1123150135/login.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
@@ -19,13 +20,13 @@ class SplashScreen3 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.deepOrange,
                 image: DecorationImage(
-                  image: AssetImage("../assets/images/profile.png"),
+                  image: AssetImage("../assets/images/profile3.jpeg"),
                   fit: BoxFit.cover,
                 ),
               ),
             ),
             Text(
-              "welcome3",
+              "welcome",
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             Text(
@@ -64,7 +65,7 @@ class SplashScreen3 extends StatelessWidget {
                   height: 5,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.indigo,
+                    color: Colors.lightBlue,
                   ),
                 ),
               ],
